@@ -10,8 +10,8 @@ html {
 body {
     margin: 0;
     min-height: 100vh;
-    background-color: #e3e3e3;
-    background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%234f4f51' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+    background-color: #DFDBE5;
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h20L0 20z' fill='%237b999d' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,6 +35,8 @@ body {
 
 .video {
     border-radius: 5px;
+    width: 100%;
+    height: auto;
 }
 
 /* Container */
@@ -195,6 +197,10 @@ select > option {
 
 /* Media Query for Large SmartPhones (Vertical) */
 @media screen and (max-width: 600px) {
+    .player {
+        min-width: 0;
+        max-width: 95vw;
+    }
 
     .fas {
         font-size: 20px;
